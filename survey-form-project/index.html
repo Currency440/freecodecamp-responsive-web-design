@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<meta charset="utf-8">
+	<title>freeCodeCampSurveyForm</title>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">freeCodeCamp Survey Form</h1>
+				<p id="description">Thank you for taking the time to help us improve the platform</P>
+			</header>
+			<form id="survey-form" action="https://survey-form.freecodecamp.rocks/submit-cat-photo" method="POST">
+				
+				<p><label id="name-label">Name<input id="name" type="text" name="name" value="" placeholder="Enter your name" required></label></P>
+				
+				<p><label id="email-label">Email<input id="email" type="email" value="" placeholder="Enter your email" required></label></p>
+				
+				<p><label id="number-label">Age<input id="number" type="number" min="1" max="90" placeholder="Age"></label></P>
+				<p>Which option best describes your current role?</p>
+				<p>
+				<select id="dropdown" name="role" placeholder="Select current role">
+					<option value="year 2023 role">Select year 2023 role</option>
+					<option value="year 2022 role">Select year 2022 role</option>
+				</select>
+				</p>
+				<p>Would you recommend freeCodeCamp to a friend?</P>
+				<p>
+					<input type="radio" name="name" value="definitely" class="input-radio"> Definitely <br>
+					<input type="radio" name="name" value="maybe" class="input-radio"> Maybe <br>
+					<input type="radio" name="name" value="notsure" class="input-radio"> Not Sure 
+				</p>
+				<p>What is your favorite feature of freeCodeCamp? (Check all that apply) </p>
+				<p>
+					<input type="checkbox" name="favoritefeature" value="frontend" class="input-checkbox" placeholder="Select an option"> Front-end Projects <br>
+					<input type="checkbox" name="favoritefeature" value="backend" class="input-checkbox" placeholder="Select an option"> Back-end Projects <br>
+					<input type="checkbox" name="favoritefeature" value="datavisualization" class="input-checkbox" placeholder="Select an option"> Data Visualization <br>
+					<input type="checkbox" name="favoritefeature" value="challenges" class="input-checkbox" placeholder="Select an option"> Challenges <br>
+					<input type="checkbox" name="favoritefeature" value="opensource" class="input-checkbox" placeholder="Select an option"> Open Source Community <br>
+					<input type="checkbox" name="favoritefeature" value="gitterhelp" class="input-checkbox" placeholder="Select an option"> Gitter help rooms <br>
+					<input type="checkbox" name="favoritefeature" value="videos" class="input-checkbox" placeholder="Select an option"> Videos <br>
+					<input type="checkbox" name="favoritefeature" value="citymeetups" class="input-checkbox" placeholder="Select an option"> City Meetups <br>
+					<input type="checkbox" name="favoritefeature" value="wiki" class="input-checkbox" placeholder="Select an option"> Wiki <br>
+					<input type="checkbox" name="favoritefeature" value="forum" class="input-checkbox" placeholder="Select an option"> Forum <br>
+					<input type="checkbox" name="favoritefeature" value="additionalcourses" class="input-checkbox" placeholder="Select an option"> Additional Courses
+				</p>
+				<p>Any comments or suggestions?</P>
+				<p><textarea name="comments" class="input-textarea" rows="10" cols="48" placeholder="Enter your comment here"></textarea></p>
+				<button type="submit" class="submit-button" id="submit">
+           Submit
+         </button>
+	</div>
+</body>
+
+</html>
